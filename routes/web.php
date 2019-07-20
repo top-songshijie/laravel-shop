@@ -20,3 +20,6 @@ Route::get('alipay', function() {
         'subject' => 'test subject - 测试',
     ]);
 });
+
+Auth::routes();
+
