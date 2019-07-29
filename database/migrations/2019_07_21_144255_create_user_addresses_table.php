@@ -14,7 +14,6 @@ class CreateUserAddressesTable extends Migration
     public function up()
     {
         Schema::create('user_addresses', function (Blueprint $table) {
-            Schema::create('user_addresses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
@@ -27,7 +26,6 @@ class CreateUserAddressesTable extends Migration
             $table->string('contact_phone');
             $table->dateTime('last_used_at')->nullable();
             $table->timestamps();
-        });
         });
     }
 
