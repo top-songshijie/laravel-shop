@@ -78,7 +78,6 @@ class ProductsController extends Controller
      */
     protected function grid()
     {
-        $grid = new Grid(new Product);
 
         $grid = new Grid(new Product);
 
