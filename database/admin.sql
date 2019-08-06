@@ -31,7 +31,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `admin_permissions` WRITE;
 /*!40000 ALTER TABLE `admin_permissions` DISABLE KEYS */;
-INSERT INTO `admin_permissions` VALUES (1,'All permission','*','','*',NULL,NULL),(2,'Dashboard','dashboard','GET','/',NULL,NULL),(3,'Login','auth.login','','/auth/login\r\n/auth/logout',NULL,NULL),(4,'User setting','auth.setting','GET,PUT','/auth/setting',NULL,NULL),(5,'Auth management','auth.management','','/auth/roles\r\n/auth/permissions\r\n/auth/menu\r\n/auth/logs',NULL,NULL);
+INSERT INTO `admin_permissions` VALUES (1,'All permission','*','','*',NULL,NULL),(2,'Dashboard','dashboard','GET','/',NULL,NULL),(3,'Login','auth.login','','/auth/login\r\n/auth/logout',NULL,NULL),(4,'User setting','auth.setting','GET,PUT','/auth/setting',NULL,NULL),(5,'Auth management','auth.management','','/auth/roles\r\n/auth/permissions\r\n/auth/menu\r\n/auth/logs',NULL,NULL),(6,'用户管理','users','','/users*','2019-08-06 05:49:14','2019-08-06 05:49:14'),(7,'商品管理','products','','/products*','2019-08-06 05:49:51','2019-08-06 05:49:51'),(8,'订单管理','orders','','/orders*','2019-08-06 05:50:17','2019-08-06 05:50:17'),(9,'优惠券管理','coupon_codes','','/coupon_codes*','2019-08-06 05:51:01','2019-08-06 05:56:17');
 /*!40000 ALTER TABLE `admin_permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `admin_role_permissions` WRITE;
 /*!40000 ALTER TABLE `admin_role_permissions` DISABLE KEYS */;
-INSERT INTO `admin_role_permissions` VALUES (1,1,NULL,NULL);
+INSERT INTO `admin_role_permissions` VALUES (1,1,NULL,NULL),(2,2,NULL,NULL),(2,3,NULL,NULL),(2,4,NULL,NULL),(2,6,NULL,NULL),(2,7,NULL,NULL),(2,8,NULL,NULL),(2,9,NULL,NULL);
 /*!40000 ALTER TABLE `admin_role_permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,7 +61,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `admin_role_users` WRITE;
 /*!40000 ALTER TABLE `admin_role_users` DISABLE KEYS */;
-INSERT INTO `admin_role_users` VALUES (1,1,NULL,NULL);
+INSERT INTO `admin_role_users` VALUES (1,1,NULL,NULL),(2,2,NULL,NULL);
 /*!40000 ALTER TABLE `admin_role_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -71,7 +71,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `admin_roles` WRITE;
 /*!40000 ALTER TABLE `admin_roles` DISABLE KEYS */;
-INSERT INTO `admin_roles` VALUES (1,'Administrator','administrator','2019-08-06 03:49:55','2019-08-06 03:49:55');
+INSERT INTO `admin_roles` VALUES (1,'Administrator','administrator','2019-08-06 03:49:55','2019-08-06 03:49:55'),(2,'运营','operator','2019-08-06 05:52:01','2019-08-06 05:52:01');
 /*!40000 ALTER TABLE `admin_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `admin_users` WRITE;
 /*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
-INSERT INTO `admin_users` VALUES (1,'admin','$2y$10$b.qyftDOzzc9dlp8zx6wNeMszo3TUTi7ytU3mlnkCMhqAMztFT0yW','Administrator',NULL,'uw4aJ6BVLzj23dbivSyhoKMlSjQNAM7NmelRnkkam1yWEvI20gZRODIJToUU','2019-08-06 03:49:55','2019-08-06 03:49:55');
+INSERT INTO `admin_users` VALUES (1,'admin','$2y$10$b.qyftDOzzc9dlp8zx6wNeMszo3TUTi7ytU3mlnkCMhqAMztFT0yW','Administrator',NULL,'wsdG2RGvCKrScbpejmjkOSTLfNIkNOKl1iMfOhquEAQjPVKi3nbkzBKvqD9g','2019-08-06 03:49:55','2019-08-06 03:49:55'),(2,'songshijie','$2y$10$s.DK8wIWZQT2nwNZ8GRryu5ZTk0LU5Ga03MNyogKLytRN0.lCOweO','运营',NULL,'H342VqqpoTCt7jOUjbOQ7Soi0dbEuS6M4cC5qtMwB2Pm5fv0NRAYQEsTb4my','2019-08-06 05:53:16','2019-08-06 05:53:16');
 /*!40000 ALTER TABLE `admin_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -103,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-08-06  5:42:40
+-- Dump completed on 2019-08-06  5:56:57
