@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
 --
--- Host: localhost    Database: laravel-shop
+-- Host: 127.0.0.1    Database: laravel-shop
 -- ------------------------------------------------------
 -- Server version	5.7.22-0ubuntu18.04.1
 
@@ -21,7 +21,7 @@
 
 LOCK TABLES `admin_menu` WRITE;
 /*!40000 ALTER TABLE `admin_menu` DISABLE KEYS */;
-INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,NULL,'2019-08-06 03:54:23'),(2,0,7,'系统管理','fa-tasks',NULL,NULL,NULL,'2019-08-06 07:19:40'),(3,2,8,'管理员','fa-users','auth/users',NULL,NULL,'2019-08-06 07:19:40'),(4,2,9,'角色','fa-user','auth/roles',NULL,NULL,'2019-08-06 07:19:40'),(5,2,10,'权限','fa-ban','auth/permissions',NULL,NULL,'2019-08-06 07:19:40'),(6,2,11,'菜单','fa-bars','auth/menu',NULL,NULL,'2019-08-06 07:19:40'),(7,2,12,'操作日志','fa-history','auth/logs',NULL,NULL,'2019-08-06 07:19:40'),(8,0,2,'用户管理','fa-users','/users',NULL,'2019-08-06 05:36:39','2019-08-06 05:38:55'),(9,0,4,'商品管理','fa-cubes','/products',NULL,'2019-08-06 05:37:32','2019-08-06 07:19:47'),(10,0,5,'订单管理','fa-rmb','/orders',NULL,'2019-08-06 05:38:33','2019-08-06 07:19:47'),(11,0,6,'优惠券管理','fa-tags','/coupon_codes',NULL,'2019-08-06 05:39:50','2019-08-06 07:19:47'),(12,0,3,'类目管理','fa-bars','/categories',NULL,'2019-08-06 07:19:35','2019-08-06 07:19:47');
+INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,NULL,'2019-08-06 03:54:23'),(2,0,9,'系统管理','fa-tasks',NULL,NULL,NULL,'2019-08-10 02:06:55'),(3,2,10,'管理员','fa-users','auth/users',NULL,NULL,'2019-08-10 02:06:55'),(4,2,11,'角色','fa-user','auth/roles',NULL,NULL,'2019-08-10 02:06:55'),(5,2,12,'权限','fa-ban','auth/permissions',NULL,NULL,'2019-08-10 02:06:55'),(6,2,13,'菜单','fa-bars','auth/menu',NULL,NULL,'2019-08-10 02:06:55'),(7,2,14,'操作日志','fa-history','auth/logs',NULL,NULL,'2019-08-10 02:06:55'),(8,0,2,'用户管理','fa-users','/users',NULL,'2019-08-06 05:36:39','2019-08-06 05:38:55'),(9,0,4,'商品管理','fa-cubes','/products',NULL,'2019-08-06 05:37:32','2019-08-06 07:19:47'),(10,0,7,'订单管理','fa-rmb','/orders',NULL,'2019-08-06 05:38:33','2019-08-10 02:06:55'),(11,0,8,'优惠券管理','fa-tags','/coupon_codes',NULL,'2019-08-06 05:39:50','2019-08-10 02:06:55'),(12,0,3,'类目管理','fa-bars','/categories',NULL,'2019-08-06 07:19:35','2019-08-06 07:19:47'),(13,9,6,'众筹商品','fa-flag-checkered','/crowdfunding_products',NULL,'2019-08-10 02:05:48','2019-08-10 02:06:55'),(14,9,5,'普通商品','fa-cubes','/products',NULL,'2019-08-10 02:06:41','2019-08-10 02:06:55');
 /*!40000 ALTER TABLE `admin_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-08-06  7:35:46
+-- Dump completed on 2019-08-10  4:05:07
