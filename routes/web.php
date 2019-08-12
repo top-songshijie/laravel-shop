@@ -70,6 +70,8 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
 
     Route::get('installments', 'InstallmentsController@index')->name('installments.index');
 
+    Route::get('installments/{installment}', 'InstallmentsController@show')->name('installments.show');
+
 });
 
 
